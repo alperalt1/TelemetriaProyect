@@ -9,15 +9,7 @@ import { FiGithub } from "react-icons/fi";
 import { Link } from "react-router-dom";
 const Navbar = () => {
     const [open, setOpen] = useState(true);
-    const Menus = [
-        { title: "Home Page",href:"/",icon: <CiHome />, current: true},
-        { title: "Dashboard"},
-        { title: "Dashboard"},
-        { title: "Dashboard"},
-        { title: "Twitter", icon: <CiTwitter />,spacing: true},
-        { title: "Facebook", icon: <CiFacebook />},
-        { title: "Github", icon: <FiGithub />},
-    ];
+    
     return (
         <div className="flex">
             <div className={`bg-cyan-600 h-screen p-5 pt-8 ${open ? "w-72": "w-20"}
@@ -27,7 +19,7 @@ const Navbar = () => {
                 onClick={() => setOpen(!open)}/>
                 <div className='inline-flex'>
                     <img
-                        className="h-9 w-10 object-cover cursor-pointer block float-left bg-cyan-600 mr-2"
+                        className="h-9 w-10 object-cover block float-left bg-cyan-600 mr-2"
                         src="../../public/logo3.png"
                     />
                     <h1 className={`text-black origin-left font-medium text-2xl duration-300 ${!open && "scale-0"}`}>Dashboard</h1>
@@ -36,10 +28,10 @@ const Navbar = () => {
                     <ul className='pt-2'>
                         <li className={`text-black text-sm flex items-center gap-x-4 cursor-pointer p-2 
                         hover:bg-light-white rounded-md mt-2`}>
-                            <Link to="/" className='text-2xl block float-left' >
+                            <Link to="/home" className='text-2xl block float-left' >
                                 <CiHome />
                             </Link>
-                            <Link to="/" className={`text-base font-medium flex-1 ${!open && "hidden"} `}>
+                            <Link to="/home" className={`text-base font-medium flex-1 ${!open && "hidden"} `}>
                                 <h1>Home</h1>
                             </Link>
                         </li>
@@ -52,7 +44,6 @@ const Navbar = () => {
                                 <h1>Dashboard</h1>
                             </Link>
                         </li>
-
                         <li className={`text-black text-sm flex items-center gap-x-4 cursor-pointer p-2 
                         hover:bg-light-white rounded-md mt-2`}>
                             <Link target="_blank" to="https://twitter.com/espol" className='text-2xl block float-left' >
@@ -73,20 +64,30 @@ const Navbar = () => {
                         </li>
                         <li className={`text-black text-sm flex items-center gap-x-4 cursor-pointer p-2 
                         hover:bg-light-white rounded-md mt-2`}>
-                            <Link target="_blank" to="/home" className='text-2xl block float-left' >
+                            <Link target="_blank" to="https://github.com/alperalt1/TelemetriaProyect.git" className='text-2xl block float-left' >
                                 <FiGithub />
                             </Link>
-                            <Link target="_blank" to="/home" className={`text-base font-medium flex-1 ${!open && "hidden"} `}>
+                            <Link target="_blank" to="https://github.com/alperalt1/TelemetriaProyect.git" className={`text-base font-medium flex-1 ${!open && "hidden"} `}>
                                 <h1>Github</h1>
                             </Link>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div className="p-7">
-                <h1 className="text-bg-slate-500 font-semibold">Home Page</h1>
+            <div className="mt-7 mx-auto flex flex-col items-center">
+                <h1 className="text-bg-slate-500 font-semibold text-7xl mt-12">!Bienvenidos¡</h1>
+                <img
+                    className="h-40 w-100 object-cover block float-center mt-12"
+                    src="../../public/foto.png"
+                />
+                <h1 className="text-bg-slate-500 font-semibold text-3xl mt-12">TELEMETRÍA Y SISTEMAS CIBERFÍSICOS</h1>
+                
+                
             </div>
-        </div>
+            <div>
+                
+            </div>
+        </div>,
     )
 }
 
