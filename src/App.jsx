@@ -10,11 +10,11 @@ import Dashboard from './pages/DashboardPage';
 import ErrorPage from './pages/ErrorPage';
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/TelemetriaProyect",
     element: <HomePage/>,
   },
   {
-    path: "/dashboard",
+    path: "/TelemetriaProyect/dashboard",
     element: <Dashboard/>,
   },
   {

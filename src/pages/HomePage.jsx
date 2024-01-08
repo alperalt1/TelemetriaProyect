@@ -21,7 +21,7 @@ const HomePage = () => {
                 <div className='inline-flex'>
                     <img
                         className="h-9 w-10 object-cover block float-left bg-sky-800 mr-2"
-                        src="/logo3.png"
+                        src="../assets/logo3.png"
                     />
                     <h1 className={`text-black origin-left font-medium text-2xl duration-300 ${!open && "scale-0"}`}>Home</h1>
                 </div>
@@ -29,19 +29,19 @@ const HomePage = () => {
                     <ul className='pt-2'>
                         <li className={`text-black text-sm flex items-center gap-x-4 cursor-pointer p-2 
                         hover:bg-light-white rounded-md mt-2`}>
-                            <Link to="/" className='text-2xl block float-left' >
+                            <Link to="/TelemetriaProyect" className='text-2xl block float-left' >
                                 <CiHome />
                             </Link>
-                            <Link to="/" className={`text-base font-medium flex-1 ${!open && "hidden"} `}>
+                            <Link to="/TelemetriaProyect" className={`text-base font-medium flex-1 ${!open && "hidden"} `}>
                                 <h1>Home</h1>
                             </Link>
                         </li>
                         <li className={`text-black text-sm flex items-center gap-x-4 cursor-pointer p-2 
                         hover:bg-light-white rounded-md mt-2`}>
-                            <Link to="/dashboard" className='text-2xl block float-left' >
+                            <Link to="/TelemetriaProyect/dashboard" className='text-2xl block float-left' >
                                 <RiDashboardFill />
                             </Link>
-                            <Link to="/dashboard" className={`text-base font-medium flex-1 ${!open && "hidden"} `}>
+                            <Link to="/TelemetriaProyect/dashboard" className={`text-base font-medium flex-1 ${!open && "hidden"} `}>
                                 <h1>Dashboard</h1>
                             </Link>
                         </li>
