@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://alperalt1.github.io/TelemetriaProyect/build",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
