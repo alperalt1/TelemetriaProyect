@@ -9,6 +9,8 @@ import { CiTwitter } from "react-icons/ci";
 import { CiFacebook } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import fot from '../assets/logo3.png';
+
 const HomePage = () => {
     const [open, setOpen] = useState(true);
     return (
@@ -21,7 +23,7 @@ const HomePage = () => {
                 <div className='inline-flex'>
                     <img
                         className="h-9 w-10 object-cover block float-left bg-sky-800 mr-2"
-                        src="../assets/logo3.png"
+                        src={fot}
                     />
                     <h1 className={`text-black origin-left font-medium text-2xl duration-300 ${!open && "scale-0"}`}>Home</h1>
                 </div>
