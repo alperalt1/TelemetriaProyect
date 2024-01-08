@@ -1,40 +1,24 @@
 import { useState } from 'react';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
 import {
   createBrowserRouter,
   RouterProvider,
   Route,
   Link,
 } from "react-router-dom";
-import Sidebar from './components/Sidebar';
-import ErrorPage from './components/ErrorPage';
-
-const Dashboard = () => {
-  return (
-    <div>
-      <Navbar/>
-    </div>
-  )
-}
-
+import HomePage from './pages/HomePage';
+import Dashboard from './pages/DashboardPage';
+import ErrorPage from './pages/ErrorPage';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Dashboard/>,
-    children: [
-      {
-        path: "/home",
-        element: <Navbar/>
-      },
-      {
-        path: "/dashboard",
-        element: <Home/>
-      },
-    ],
+    element: <HomePage/>,
   },
   {
-    path: "*",
+    path: "/dashboard",
+    element: <Dashboard/>,
+  },
+  {
+    path: "/*",
     element: <ErrorPage/>
   }
 ])
