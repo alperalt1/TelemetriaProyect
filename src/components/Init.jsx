@@ -3,7 +3,7 @@ import fot1 from '../assets/foto.png';
 
 const Init = () => {
     return (
-        <div className="flex flex-col content-center items-center w-full bg-sky-100">
+        <div className="flex flex-col items-center w-full bg-sky-100">
                 <h1 className="text-bg-slate-500 font-semibold text-7xl mt-16">!Bienvenidos¡</h1>
                 <img
                     className="h-40 w-100 object-cover block float-center mt-12"

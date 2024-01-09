@@ -83,7 +83,7 @@ const Sidebar = () => {
         },
     ];
     return (
-        <div className={`flex flex-col content-center items-center w-full bg-sky-100`} >
+        <div className={`flex flex-col items-center w-full bg-sky-100`} >
             <h1 className="text-bg-slate-500 font-semibold text-7xl mt-2 mb-14">Dashboard</h1>
             <div className='main-cards'>
                 <div className='card'>
