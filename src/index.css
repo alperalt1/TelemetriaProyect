@@ -18,7 +18,7 @@ code {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
-  margin: 15px 155px 45px 155px;
+  margin: 0px 155px 45px 130px;
   width: 1400px;
 }
 

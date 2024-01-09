@@ -15,7 +15,7 @@ const HomePage = () => {
     const [open, setOpen] = useState(true);
     return (
         <div className="flex">
-            <div className={`bg-sky-800 h-screen w-10 p-5 pt-8 ${open ? "w-72": "w-20"}
+            <div className={`bg-sky-800 h-screen w-10 p-5 pt-8 ${open ? "w-60": "w-20"}
             duration-300 relative`}>
                 <FaArrowLeft className={`bg-fuchsia-100 text-bg-cyan-600 text-3xl rounded-full
                 absolute -right-3 top-9 border border-bg-cyan-600 cursor-pointer ${!open && "rotate-180"}`} 
@@ -25,7 +25,7 @@ const HomePage = () => {
                         className="h-9 w-10 object-cover block float-left bg-sky-800 mr-2"
                         src={fot}
                     />
-                    <h1 className={`text-black origin-left font-medium text-2xl duration-300 ${!open && "scale-0"}`}>Home</h1>
+                    <h1 className={`text-black origin-left font-medium font-mono text-3xl ${!open && "scale-0"}`}>Home</h1>
                 </div>
                 <div>
                     <ul className='pt-2'>
@@ -34,7 +34,7 @@ const HomePage = () => {
                             <Link to="/TelemetriaProyect" className='text-2xl block float-left' >
                                 <CiHome />
                             </Link>
-                            <Link to="/TelemetriaProyect" className={`text-base font-medium flex-1 ${!open && "hidden"} `}>
+                            <Link to="/TelemetriaProyect" className={`text-xl font-mono font-medium flex-1 ${!open && "hidden"} `}>
                                 <h1>Home</h1>
                             </Link>
                         </li>
@@ -43,7 +43,7 @@ const HomePage = () => {
                             <Link to="/TelemetriaProyect/dashboard" className='text-2xl block float-left' >
                                 <RiDashboardFill />
                             </Link>
-                            <Link to="/TelemetriaProyect/dashboard" className={`text-base font-medium flex-1 ${!open && "hidden"} `}>
+                            <Link to="/TelemetriaProyect/dashboard" className={`text-xl font-mono font-medium flex-1 ${!open && "hidden"} `}>
                                 <h1>Dashboard</h1>
                             </Link>
                         </li>
@@ -52,7 +52,7 @@ const HomePage = () => {
                             <Link target="_blank" to="https://twitter.com/espol" className='text-2xl block float-left' >
                                 <CiTwitter />
                             </Link>
-                            <Link target="_blank" to="https://twitter.com/espol" className={`text-base font-medium flex-1 ${!open && "hidden"} `}>
+                            <Link target="_blank" to="https://twitter.com/espol" className={`text-xl font-mono font-medium flex-1 ${!open && "hidden"} `}>
                                 <h1>Twitter</h1>
                             </Link>
                         </li>
@@ -61,7 +61,7 @@ const HomePage = () => {
                             <Link target="_blank" to="https://www.facebook.com/espol/" className='text-2xl block float-left' >
                                 <CiFacebook />
                             </Link>
-                            <Link target="_blank" to="https://www.facebook.com/espol/" className={`text-base font-medium flex-1 ${!open && "hidden"} `}>
+                            <Link target="_blank" to="https://www.facebook.com/espol/" className={`text-xl font-medium font-mono flex-1 ${!open && "hidden"} `}>
                                 <h1>Facebook</h1>
                             </Link>
                         </li>
@@ -70,14 +70,14 @@ const HomePage = () => {
                             <Link target="_blank" to="https://github.com/alperalt1/TelemetriaProyect.git" className='text-2xl block float-left' >
                                 <FiGithub />
                             </Link>
-                            <Link target="_blank" to="https://github.com/alperalt1/TelemetriaProyect.git" className={`text-base font-medium flex-1 ${!open && "hidden"} `}>
+                            <Link target="_blank" to="https://github.com/alperalt1/TelemetriaProyect.git" className={`text-xl font-medium font-mono flex-1 ${!open && "hidden"} `}>
                                 <h1>Github</h1>
                             </Link>
                         </li>
                     </ul>
                 </div>
             </div>
-            <Init/>  
+            <Init/>
         </div>
     )
 }

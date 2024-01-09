@@ -83,8 +83,8 @@ const Sidebar = () => {
         },
     ];
     return (
-        <div className={`w-full`} >
-            <h1 className="text-bg-slate-500 font-semibold text-7xl mt-2 ml-6 mb-14">Dashboard</h1>
+        <div className={`flex flex-col content-center items-center w-full bg-sky-100`} >
+            <h1 className="text-bg-slate-500 font-semibold text-7xl mt-2 mb-14">Dashboard</h1>
             <div className='main-cards'>
                 <div className='card'>
                     <div className='card-inner'>
@@ -115,15 +115,15 @@ const Sidebar = () => {
                     <h1>42</h1>
                 </div>
             </div>
-            <ResponsiveContainer width="95%" height="30%">
+            <ResponsiveContainer width="71%" height="30%">
                 <BarChart
                     width={500}
                     height={300}
                     data={datamonth}
                     margin={{
                         top: 20,
-                        right: 20,
-                        left: 60,
+                        right: 0,
+                        left: 0,
                         bottom: 5,
                     }}
                 >
@@ -144,8 +144,8 @@ const Sidebar = () => {
                     data={data}
                     margin={{
                         top: 60,
-                        right: 20,
-                        left: 60,
+                        right: 0,
+                        left: 0,
                         bottom: 5,
                     }}
                 >
