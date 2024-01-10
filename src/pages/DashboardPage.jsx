@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { FaBeer } from 'react-icons/fa';
 import { FaArrowLeft } from "react-icons/fa";
 import { CiHome } from "react-icons/ci";
-import { RiDashboardFill  } from "react-icons/ri";
+import { RiDashboardFill } from "react-icons/ri";
 import { CiTwitter } from "react-icons/ci";
 import { CiFacebook } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
@@ -15,17 +15,17 @@ const Dashboard = () => {
     const [open, setOpen] = useState(true);
     return (
         <div className="flex">
-            <div className={`bg-sky-800 h-screen w-10 p-5 pt-8 ${open ? "w-60": "w-20"}
+            <div className={`bg-sky-800 h-screen p-5 pt-8 pl-1 ${open ? "w-60" : "w-20"}
             duration-300 relative`}>
                 <FaArrowLeft className={`bg-fuchsia-100 text-bg-cyan-600 text-3xl rounded-full
-                absolute -right-3 top-9 border border-bg-cyan-600 cursor-pointer ${!open && "rotate-180"}`} 
-                onClick={() => setOpen(!open)}/>
+                absolute -right-3 top-9 border border-bg-cyan-600 cursor-pointer ${!open && "rotate-180"}`}
+                    onClick={() => setOpen(!open)} />
                 <div className='inline-flex'>
                     <img
                         className="h-9 w-10 object-cover block float-left bg-sky-800 mr-2"
                         src={fot}
                     />
-                    <h1 className={`text-black origin-left font-medium font-mono text-3xl ${!open && "scale-0"}`}>Home</h1>
+                    <h1 className={`text-black origin-left font-medium font-mono text-2xl ${!open && "scale-0"}`}>Dashboard</h1>
                 </div>
                 <div>
                     <ul className='pt-2'>
@@ -77,8 +77,8 @@ const Dashboard = () => {
                     </ul>
                 </div>
             </div>
-            <Sidebar/>
-          
+            <Sidebar />
+
         </div>
     )
 }

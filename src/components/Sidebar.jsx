@@ -84,18 +84,18 @@ const Sidebar = () => {
     ];
     return (
         <div className={`flex flex-col items-center w-full bg-sky-100`} >
-            <h1 className="text-bg-slate-500 font-semibold text-7xl mt-2 mb-14">Dashboard</h1>
+            <h1 className="text-bg-slate-500 font-semibold text-5xl mt-2 mb-6">Dashboard</h1>
             <div className='main-cards'>
                 <div className='card'>
                     <div className='card-inner'>
-                        <h3>Estado Relay</h3>
+                        <h3>Relay</h3>
                         <SiRelay />
                     </div>
                     <h1>Abierto</h1>
                 </div>
                 <div className='card'>
                     <div className='card-inner'>
-                        <h3>Estado Valvula</h3>
+                        <h3>Valvula</h3>
                         <GiValve />
                     </div>
                     <h1>Abierto</h1>
@@ -115,16 +115,16 @@ const Sidebar = () => {
                     <h1>42</h1>
                 </div>
             </div>
-            <ResponsiveContainer width="71%" height="30%">
+            <ResponsiveContainer width="58%" height="30%">
                 <BarChart
                     width={500}
                     height={300}
                     data={datamonth}
                     margin={{
-                        top: 20,
+                        top: 5,
                         right: 0,
                         left: 0,
-                        bottom: 5,
+                        bottom: 7,
                     }}
                 >
                     <CartesianGrid strokeDasharray="3 3" />
@@ -143,7 +143,7 @@ const Sidebar = () => {
                     height={300}
                     data={data}
                     margin={{
-                        top: 60,
+                        top: 15,
                         right: 0,
                         left: 0,
                         bottom: 5,
